@@ -9130,6 +9130,30 @@ button.bg-dark:focus {
   padding-left: 3rem !important;
 }
 
+.p-6 {
+  padding: 3.75rem !important;
+}
+
+.pt-6,
+.py-6 {
+  padding-top: 3.75rem !important;
+}
+
+.pr-6,
+.px-6 {
+  padding-right: 3.75rem !important;
+}
+
+.pb-6,
+.py-6 {
+  padding-bottom: 3.75rem !important;
+}
+
+.pl-6,
+.px-6 {
+  padding-left: 3.75rem !important;
+}
+
 .m-n1 {
   margin: -0.25rem !important;
 }
