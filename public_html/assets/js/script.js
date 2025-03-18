@@ -183,3 +183,22 @@ function descargarArchivo() {
   enlace.click();
   document.body.removeChild(enlace);
 }
+
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+  event.preventDefault(); // Evita que se recargue la página
+
+  const formData = {
+      name: document.getElementById("name").value,
+      email: document.getElementById("email").value,
+      message: document.getElementById("message").value
+  };
+
+  fetch("http://localhost:3000/save-to-file", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData)
+  })
+  .then(response => response.json())
+  .then(data => alert(data.message))
+  .catch(error => console.error("Error:", error));
+});
