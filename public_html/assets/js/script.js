@@ -13,7 +13,7 @@
 */
 
 // smooth scroll
-$(document).ready(function(){
+/*$(document).ready(function(){
     $(".navbar .nav-link").on('click', function(event) {
 
         if (this.hash !== "") {
@@ -29,6 +29,31 @@ $(document).ready(function(){
             });
         } 
     });
+});*/
+
+$(document).ready(function(){
+  $(".navbar .nav-link").on('click', function(event) {
+      var targetUrl = $(this).attr("href");
+
+      // Si el enlace tiene un hash (ej: index.html#about o #about)
+      if (targetUrl.includes("#")) {
+          var parts = targetUrl.split("#");
+          var page = parts[0]; // Parte antes de #
+          var hash = "#" + parts[1]; // Parte después de #
+
+          // Si la página está vacía, es un hash de la misma página
+          if (page === "" || page === window.location.pathname.split("/").pop()) {
+              event.preventDefault();
+              $('html, body').animate({
+                  scrollTop: $(hash).offset().top
+              }, 700);
+          } 
+          // Si es una página diferente, redirigir sin impedir el evento
+          else {
+              window.location.href = targetUrl;
+          }
+      }
+  });
 });
 
 // protfolio filters
