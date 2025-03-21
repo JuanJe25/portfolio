@@ -57,7 +57,7 @@
                         <a href="index.html#portfolio" class="nav-link">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a href="index.html#blog" class="nav-link">Proyectos Personales</a>   
+                        <a href="index.html#personal" class="nav-link">Proyectos Personales</a>   
                     </li>
                     <li class="nav-item last-item">
                         <a href="#contact" class="nav-link">Contacto</a>
@@ -143,6 +143,7 @@
                                                 <div class="text-holder">
                                                     <h6 class="title">Web Scraping </h6>
                                                     <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                                                    <a href="plantilla.html" class="subtitle"><u>Ver mas</u></a>
                                                 </div>
                                             </div>   
                                         </div>             
@@ -163,15 +164,16 @@
                 <div class="col-lg-8">
                     <div class="contact-form-card">
                         <h4 class="contact-title">Envíame un mensaje</h4>
-                        <form action="" id="contactForm">
+                        <!--<form action="" id="contactForm">-->
+                        <form action="https://formsubmit.co/your@email.com" method="POST">
                             <div class="form-group">
-                                <input  class="form-control" type="text" placeholder="Nombre *" required>
+                                <input  class="form-control" name ="name" type="text" placeholder="Nombre *" required>
                             </div>
                             <div class="form-group">
-                                <input class="form-control" type="email" placeholder="Email *" required>
+                                <input class="form-control" name ="email" type="email" placeholder="Email *" required>
                             </div>
                             <div class="form-group">
-                                <textarea class="form-control" id=" placeholder="Mensaje *" rows="7" required></textarea>
+                                <textarea class="form-control" name ="message" placeholder="Mensaje *" rows="7" required></textarea>
                             </div>
                             <div class="form-group ">
                                 <button type="submit" class="form-control btn btn-primary" >Enviar Mensaje</button>

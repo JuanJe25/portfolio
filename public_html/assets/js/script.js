@@ -184,6 +184,8 @@ function descargarArchivo() {
   document.body.removeChild(enlace);
 }
 
+
+
 document.getElementById("contactForm").addEventListener("submit", function(event) {
   event.preventDefault(); // Evita que se recargue la página
 
@@ -202,3 +204,5 @@ document.getElementById("contactForm").addEventListener("submit", function(event
   .then(data => alert(data.message))
   .catch(error => console.error("Error:", error));
 });
+
+

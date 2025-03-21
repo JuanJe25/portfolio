@@ -34,5 +34,9 @@
     "android >= 4"
   ],
   "keywords": [],
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "optipng-bin": "^5.1.0",
+    "pngquant-bin": "^5.0.2"
+  }
 }

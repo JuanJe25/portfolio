@@ -4622,6 +4622,11 @@ input[type="button"].btn-block {
   list-style: none;
 }
 
+.navbar-nav .brand-txt {   /* Modificacion JJ para el texto nombre en menú plantilla.html*/
+  font-size: 13px;
+  color: #888;
+}
+
 .navbar-nav .nav-link {
   padding-right: 0;
   padding-left: 0;
